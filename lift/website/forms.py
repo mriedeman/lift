@@ -5,7 +5,7 @@ from .models import Pipes
 class PostForm(ModelForm):
     class Meta:
         model = Pipes
-        fields = ('material', 'inner_diameter', 'pipe_length', 'outlet_type')
+        fields = ('material', 'inner_diameter', 'pipe_length', 'line_type')
        # widgets = {
         #    'body': Textarea()
 
