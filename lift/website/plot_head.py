@@ -98,7 +98,7 @@ def plot_head(inner_diameter, pipe_length, material):
     #pipe_length (feet)
     #flow_rate (gal/min)
     #inner diamter (inches)
-    head_loss = [4.73*((flow_rate/hazen_williams_coef_dict[material])**1.852)*(pipe_length/(inner_diameter_dict[inner_diameter]**4.87)) for flow_rate in flow_rates]
+    head_loss = [10.44*((flow_rate/hazen_williams_coef_dict[material])**1.852)*(pipe_length/(inner_diameter_dict[inner_diameter]**4.87)) for flow_rate in flow_rates] # hf = KQ^n where K = 10.44L/(C^1.85 * D^4.87) for Q(gpm), L(ft), D(in), hf(ft H20)
     
     #figure
     plt.figure(figsize = (10,8))
